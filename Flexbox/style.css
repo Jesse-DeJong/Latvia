@@ -1,0 +1,104 @@
+/* T Cards */
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.tContainer {
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 600px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.cardT {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Navbar */
+.flexContainer {
+    display: flex;
+
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+
+    border: 2px solid black;
+}
+
+.navBar {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+
+    background-color: red;
+    margin: 10px;
+}
+
+.card > p {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* why arent you working? */
+    height: 100%; /* dumbfix */
+}
+
+.cardContainerVertical {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+
+    justify-content: space-evenly;
+}
+
+.cardContainerHorizontal {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* Colouring */
+
+.card1 {
+    background-color: lightblue;
+}
+
+.card2 {
+    background-color: lightcoral;
+}
+
+.card3 {
+    background-color: lightgreen;
+}
+
+.card4 {
+    background-color: coral;
+}
+
+.card5 {
+    background-color: pink;
+}
+
+.card6 {
+    background-color: lightgrey;
+}
+
+.card7 {
+    background-color: powderblue;
+}
+
+.card8 {
+    background-color: lightblue;
+}
