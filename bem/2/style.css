@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.__heading--blueArial {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.__para--redUnderlinedArial {
+    color: red;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.__unordered--noStyle {
+    list-style-type: none;
+}
+
+.div__border--solidBlack {
+    border: 1px black solid;
+}
+
+.__para--coralBold {
+    color: coral;
+    font-weight: bold;
+}
+
+.__para--brown {
+    color: brown;
+}

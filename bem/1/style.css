@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-weight: bolder;
+}
+
+.heading--centered {
+    text-align: center;
+}
+
+.__para {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.__para--blueStrikethrough {
+    color: blue;
+    text-decoration: line-through;
+}
+
+.__para--end {
+    text-align: end;
+}
+
+.__border--coralSolid {
+    border: 2px coral solid;
+}
+
+.__border--greenDashed {
+    border: 3px green dashed;
+}

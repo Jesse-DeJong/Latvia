@@ -1,0 +1,151 @@
+/* Wrappers */
+.gridWrapper {
+    display: grid;
+    
+    grid-template-areas:
+    "header header header aside"
+    "flex flex flex article"
+    "flex flex flex article" 
+    ;
+    /* gap: 10px; */
+}
+
+.flexWrapper {
+    display: flex;
+    margin-top: 10px;
+}
+
+/* Left Side */
+#flexCol1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+/* Jefferson Airplane */
+#jeffersonAirplane {
+    display: flex;
+}
+
+/* Nina Simone */
+#ninaSimone {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Right Side */
+#flexCol2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#flexCol2row1 {
+    display: flex;
+    height: 60%;
+    align-items: center;
+}
+
+#flexCol2row2 {
+    margin-top: 10px;
+    display: flex;
+    height: 40%;
+    justify-content: space-between;
+}
+/* Tom Waits */
+#tomWaits {
+    padding: 10px;
+    border: 2px black solid;
+}
+
+#tomWaits > p {
+    margin: 40px 0px; /* X Y */
+}
+
+#tomWaitsImg {
+    display: flex;
+    justify-content: space-between;
+}
+/* Glenn Gould */
+#glennGould {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding: 10px;
+        border: 2px black solid;
+}
+
+/* Jamie Lidell */
+#jamieLidell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 10px;
+    margin-left: 10px;
+        border: 2px black solid;
+}
+
+/*  */
+.grid-item {
+    display: inline-grid;
+    /* border: 2px black solid; */
+    align-items: center;
+    justify-content: center;
+}
+
+.asideGrid > h2 {
+    padding: 0px 10px; /* Y X */
+}
+
+/* Grid AREAs */
+.headerGrid {
+    grid-area: header;
+        border: 2px black solid;
+}
+
+.asideGrid {
+    grid-area: aside;
+        border: 2px black solid;
+        margin-left: 10px;
+}
+
+.flexGrid {
+    grid-area: flex;
+}
+
+.articleGrid {
+    grid-area: article;
+        border: 2px black solid;
+        margin: 10px 0px 0px 10px; /* N E S W */
+}
+
+/* Flex AREAs */
+#flexCol1 > div {
+    border: 2px black solid;
+    padding: 10px;
+}
+
+#flexCol2 > div {
+    /* border: 2px black solid; */
+    padding: 10px;
+}
+
+/* Flex Division */ 
+.splitHor {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.splitVert {
+    display: flex;
+    flex-direction: column;
+}

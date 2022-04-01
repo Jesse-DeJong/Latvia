@@ -1,0 +1,38 @@
+.wrapper {
+    display: grid;
+    
+    grid-template-areas:
+    "a a b"
+    "d . b"
+    "d c c" 
+    ;
+    gap: 10px;
+
+    grid-template-rows: repeat(3, 400px);
+}
+
+.grid-item {
+    display: inline-grid;
+    border: 2px black solid;
+    align-items: center;
+}
+
+.a {
+    grid-area: a;
+    background-color: aquamarine;
+}
+
+.b {
+    grid-area: b;
+    background-color: beige;
+}
+
+.c {
+    grid-area: c;
+    background-color: lavender;
+}
+
+.d {
+    grid-area: d;
+    background-color: rgb(231, 59, 59);
+}

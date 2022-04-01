@@ -1,0 +1,83 @@
+.nav {
+    display: flex;
+    width: 100%;
+
+    border: 1px black solid;
+    margin: 10px 0px; /* Y X */
+}
+
+/* Nav 1 */
+.nav__unordered--split {
+    list-style-type: none;
+
+    display: flex;
+}
+
+.__list--right {
+    justify-content: space-around;
+}
+
+.nav__unordered--split {
+    list-style-type: none;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+.nav__unordered--split > div {
+    display: flex;
+    width: 100%;
+
+    /* justify-content: space-around; */
+}
+
+.nav__unordered--split > li {
+    padding: 10px;
+}
+
+/* Nav 2 */
+.nav__unordered--evenly {
+    list-style-type: none;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.nav__unordered--evenly > div {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-around;
+}
+
+.nav__unordered--evenly > li {
+    padding: 10px;
+}
+
+/* Nav 3 */
+.nav__unordered--splitInverted {
+    list-style-type: none;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: space-around;
+}
+
+.nav__unordered--splitInverted > div {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-around;
+}
+
+.nav__unordered--splitInverted > li {
+    padding: 10px;
+}
