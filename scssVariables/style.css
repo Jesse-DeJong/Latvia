@@ -1,0 +1,74 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px black solid;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list__item {
+  list-style-type: none;
+  padding: 0px 12px;
+}
+
+.list__item:hover {
+  -webkit-box-shadow: 5px 10px;
+          box-shadow: 5px 10px;
+  color: lightgray;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid rebeccapurple;
+  border-radius: 15px;
+  margin: 3% 5%;
+  padding: 30px;
+}
+
+.section__heading {
+  font-size: 40px;
+}
+
+.section__img {
+  border: 2px green solid;
+  border-radius: 15px;
+  max-width: 75%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__icon {
+  font-size: 100px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer__icon:hover {
+  cursor: pointer;
+  font-size: 110px;
+}
+/*# sourceMappingURL=style.css.map */

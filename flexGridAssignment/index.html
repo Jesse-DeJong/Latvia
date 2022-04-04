@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./reset.css"> -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style2.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,21 +13,23 @@
     <div class="gridWrapper">    
         <div class="grid-item headerGrid"><h2>My Favourite Artists</h2></div>
         <div class="grid-item asideGrid"><h2>My Favourite Books</h2></div>
-        <div class="grid-item flexGrid">
+        <!-- <div class="grid-item flexGrid"> -->
             <!-- FLEX -->
-            <div class="flexWrapper">
+            <!-- <div class="flexWrapper"> -->
                 <!-- FLEX COLUMN ONE -->
-                <div id="flexCol1">
+                <!-- <div id="flexCol1"> -->
                     <!-- Jefferson Airplane -->
                     <div id="jeffersonAirplane">
                         <div class="splitHor">
                         <div class="splitVert">
                             <h4>Jefferson Airplane</h4>
-                            <label for="jaList"><strong>Top Picks:</strong></label>
-                            <ul name="jaList">
-                                <li>White Rabbit</li>
-                                <li>Somebody To Love</li>
-                            </ul>
+                            <div> <!-- grouping for flex -->
+                                <label for="jaList"><strong>Top Picks:</strong></label>
+                                <ul name="jaList">
+                                    <li>White Rabbit</li>
+                                    <li>Somebody To Love</li>
+                                </ul>
+                            </div>
                         </div>
                             <img src="https://picsum.photos/200/200">
                         </div>
@@ -38,11 +40,11 @@
                         <img src="https://picsum.photos/200/200">
                         <p>Eunice Kathleen Waymon (February 21, 1933 – April 21, 2003), known professionally as Nina Simone, was an American singer, songwriter, musician, arranger, and civil rights activist.</p>
                     </div>
-                </div>
+                <!-- </div> -->
 
                 <!-- FLEX COLUMN 2-->
-                <div id="flexCol2">
-                    <div id="flexCol2row1">
+                <!-- <div id="flexCol2"> -->
+                    <!-- <div id="flexCol2row1"> -->
                         <!-- Tom Waits -->
                         <div id="tomWaits">
                             <h4>Tom Waits</h4>
@@ -52,15 +54,15 @@
                                 <img src="https://picsum.photos/100/100">
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
 
-                    <div id="flexCol2row2">
+                    <!-- <div id="flexCol2row2"> -->
                         <!-- Glenn Gould-->
                         <div id="glennGould">
                             <h4>Glenn Gould</h4>
                             <div> <!-- grouping for flex -->
-                                <label for="ggList"><strong>Top Picks:</strong></label>
-                                <ul name="ggList">
+                                <label id="ggLabel" for="ggList"><strong>Top Picks:</strong></label>
+                                <ul id="ggList" name="ggList">
                                     <li>Goldberg Variations</li>
                                     <li>Beethoven, Concerto No. 5</li>
                                 </ul>
@@ -68,10 +70,12 @@
                         </div>
                         <!-- Jamie Lidell-->
                         <div id="jamieLidell">
-                            <h4>Jamie Lidell</h4>
                             <div class="splitHor">
-                                <img src="https://picsum.photos/100/100">
                                 <div> <!-- grouping for flex -->
+                                    <h4>Jamie Lidell</h4>
+                                    <img id="jlImg" src="https://picsum.photos/150/150">
+                                </div>
+                                <div id="jlUl"> <!-- grouping for flex -->
                                     <label for="jlList"><strong>Favourite Song</strong></label>
                                     <ul name="jlList">
                                         <li>Compass</li>
@@ -79,16 +83,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    <!-- </div> -->
+                <!-- </div> -->
 
-            </div>
+            <!-- </div> -->
             
-        </div>
+        <!-- </div> -->
         <div class="grid-item articleGrid">
-            <div>
+            <div> <!-- grouping for flex -->
                 <h4>The Saxon Stories</h4>
-                <img src="https://picsum.photos/200/300">
+                <img id="articleImg" src="https://picsum.photos/200/300">
             </div>
         </div>
     </div>

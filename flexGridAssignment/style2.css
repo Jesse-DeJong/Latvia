@@ -1,0 +1,153 @@
+.gridWrapper {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 3fr;
+
+    gap: 5px;
+    margin: 10px;
+}
+
+.headerGrid {
+    grid-column: 1 / 4;
+    grid-row: 1;
+
+    border: 2px black solid;
+}
+
+.asideGrid {
+    grid-column: 4;
+    grid-row: 1;
+
+    border: 2px black solid;
+}
+
+/* Segments */
+#jeffersonAirplane {
+    grid-column: 1;
+    grid-row: 2;
+
+    padding: 10px;
+    border: 2px black solid;
+}
+
+#ninaSimone {
+    grid-column: 1;
+    grid-row: 3 / 5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 2px black solid;
+}
+
+#ninaSimone > img {
+    padding: 10px 0px; /* Y X */
+}
+
+#tomWaits {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px black solid;
+}
+
+#tomWaitsImg {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+#glennGould {
+    grid-column: 2;
+    grid-row: 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    border: 2px black solid;
+}
+
+#ggLabel {
+    font-weight: bold;
+}
+
+#jamieLidell {
+    grid-column: 3;
+    grid-row: 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    border: 2px black solid;
+}
+
+#jlImg {
+    margin-top: 10px;
+}
+
+#jlUl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.articleGrid {
+    grid-column: 4;
+    grid-row: 2 / 5;
+
+    border: 2px black solid;
+}
+
+#articleImg {
+    margin-top: 20px;
+}
+
+/* Global */
+.grid-item {
+    display: inline-grid;
+    /* border: 2px black solid; */
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+li {
+    list-style-type: disc; 
+}
+ul {
+    margin: 10px 0px 0px 30px; /* N E S W */
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Flex Division */ 
+.splitHor {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.splitVert {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
