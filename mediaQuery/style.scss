@@ -1,11 +1,14 @@
+/* Browser Reset */
 * {
     padding: 0%;
     margin: 0%;
 }
 
+/* Screen Sizing Variables */
 $sm: 600px;
 $md: 900px;
 
+/* Mixins with customisations */
 @mixin german {
     flex-direction: column;
 
@@ -54,6 +57,7 @@ $md: 900px;
     }
 }
 
+/* Base Styling and Grid Setup */
 .flag {
     display: grid;
     height: 100vh;
@@ -61,11 +65,13 @@ $md: 900px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100vw;
     
+    /* Orientation Flip */
     @media only screen and (max-width: $sm) {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 100vh;
     }
     
+    /* Change mixin based on screen size */
     @media only screen and (max-width: $sm) {
         @include german;
     }

@@ -1,8 +1,12 @@
+/* Browser Reset */
 * {
   padding: 0%;
   margin: 0%;
 }
 
+/* Screen Sizing Variables */
+/* Mixins with customisations */
+/* Base Styling and Grid Setup */
 .flag {
   display: -ms-grid;
   display: grid;
@@ -11,6 +15,8 @@
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 100vw;
       grid-template-rows: 100vw;
+  /* Orientation Flip */
+  /* Change mixin based on screen size */
 }
 
 @media only screen and (max-width: 600px) {
