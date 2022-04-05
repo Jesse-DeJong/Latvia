@@ -1,0 +1,50 @@
+$red: red;
+$blue: blue;
+
+@mixin shape {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin flex {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+@mixin border($width, $style, $color) {
+    border: $width $style $color;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    &__btn {
+    @include flex;
+    @include border(2px, dotted, $red);
+
+        &--para {
+            @include shape
+        }
+    }
+
+    &__chip {
+    @include flex;
+    @include border(2px, solid, $blue);
+
+        &--para {
+            @include shape
+        }
+    }
+
+    &__pill {
+    @include flex;
+    @include border(2px, dashed, $blue);
+
+        &--para {
+            @include shape
+        }
+    }
+}
+

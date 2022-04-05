@@ -1,0 +1,84 @@
+$sm: 600px;
+$md: 900px;
+
+@mixin german {
+    flex-direction: column;
+
+    &__one {
+        background-color: black;
+    }
+
+    &__two {
+        background-color: red;
+    }
+
+    &__three {
+        background-color: gold;
+    }
+}
+
+@mixin belgian {
+    flex-direction: row;
+
+    &__one {
+        background-color: black;
+    }
+
+    &__two {
+        background-color: gold;
+    }
+
+    &__three {
+        background-color: red;
+    }
+}
+
+@mixin irish {
+    flex-direction: row;
+
+    &__one {
+        background-color: green;
+    }
+
+    &__two {
+        background-color: white;
+    }
+
+    &__three {
+        background-color: orange;
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.flag {
+    display: inline-flex;
+    border: 1px black solid;
+
+    @media only screen and (max-width: $sm) {
+        @include german;
+    }
+
+    @media only screen and (min-width: ($sm + 1px)) and (max-width: $md) {
+        @include belgian;
+    }
+    
+    @media only screen and (min-width: ($md + 1px)) {
+        @include irish;
+    }
+
+}
+
+.flag > div {
+
+    height: 100px;
+    width: 100px;
+
+    @media only screen and (max-width: $sm) {
+        height: 100px;
+        width: 600px;
+    }
+}
